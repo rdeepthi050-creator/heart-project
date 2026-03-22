@@ -1,3 +1,22 @@
+body {
+  margin: 0;
+  background: #111;
+  font-family: Arial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* white card */
+.card {
+  background: #f5f5f5;
+  padding: 30px;
+  border-radius: 25px;
+  text-align: center;
+  width: 500px;
+}
+
 /* layout */
 .content {
   display: flex;
@@ -6,7 +25,31 @@
   gap: 20px;
 }
 
-/* character image */
+/* character */
 .character {
   width: 100px;
+}
+
+/* heart */
+.love {
+  position: relative;
+  width: 320px;
+  height: 250px;
+}
+
+/* hearts */
+.block div {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  background: url('https://cdn-icons-png.flaticon.com/512/833/833472.png');
+  background-size: cover;
+}
+
+/* text */
+h2 {
+  margin-top: 20px;
+  color: crimson;
+  font-size: 28px;
+  text-shadow: 0 0 20px pink;
 }
