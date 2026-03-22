@@ -1,22 +1,31 @@
 const block = document.querySelector(".block");
 
-const heartShape = [
-  [0,3],[0,4],
-  [1,2],[1,3],[1,4],[1,5],
-  [2,1],[2,2],[2,3],[2,4],[2,5],[2,6],
-  [3,2],[3,3],[3,4],[3,5],
-  [4,3],[4,4]
+const heart = [
+"0000110000110000",
+"0001111001111000",
+"0011111111111100",
+"0111111111111110",
+"0111111111111110",
+"0111111111111110",
+"0011111111111100",
+"0001111111111000",
+"0000111111110000",
+"0000011111100000",
+"0000001111000000",
+"0000000110000000"
 ];
 
-const size = 40;
+const size = 22;
 
-heartShape.forEach(([row, col], i) => {
-  const div = document.createElement("div");
+heart.forEach((row, i) => {
+  [...row].forEach((col, j) => {
+    if (col === "1") {
+      const div = document.createElement("div");
 
-  div.style.top = row * size + "px";
-  div.style.left = col * size + "px";
+      div.style.top = i * size + "px";
+      div.style.left = j * size + "px";
 
-  div.style.animationDelay = (i * 0.05) + "s";
-
-  block.appendChild(div);
+      block.appendChild(div);
+    }
+  });
 });
