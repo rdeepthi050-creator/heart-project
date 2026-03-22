@@ -1,46 +1,12 @@
-body {
-  margin: 0;
-  background: #111;
-  font-family: Arial;
+/* layout */
+.content {
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 100vh;
+  justify-content: center;
+  gap: 20px;
 }
 
-/* white card */
-.card {
-  background: #f5f5f5;
-  padding: 30px;
-  border-radius: 25px;
-  text-align: center;
-}
-
-/* title */
-h1 {
-  margin-bottom: 20px;
-}
-
-/* heart container */
-.love {
-  position: relative;
-  width: 420px;
-  height: 300px;
-  margin: auto;
-}
-
-/* small hearts */
-.block div {
-  width: 22px;
-  height: 22px;
-  position: absolute;
-  background: url('https://cdn-icons-png.flaticon.com/512/833/833472.png');
-  background-size: cover;
-}
-
-/* bottom text */
-h2 {
-  margin-top: 20px;
-  color: crimson;
-  text-shadow: 0 0 15px pink;
+/* character image */
+.character {
+  width: 100px;
 }
