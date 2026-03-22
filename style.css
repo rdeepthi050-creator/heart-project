@@ -1,37 +1,46 @@
 body {
   margin: 0;
-  background: #1a1a1a;
-  text-align: center;
+  background: #111;
   font-family: Arial;
-  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
+/* white card */
+.card {
+  background: #f5f5f5;
+  padding: 30px;
+  border-radius: 25px;
+  text-align: center;
+}
+
+/* title */
 h1 {
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-h2 {
-  color: pink;
-  text-shadow: 0 0 20px red;
-}
-
+/* heart container */
 .love {
   position: relative;
-  width: 400px;
-  height: 400px;
+  width: 420px;
+  height: 300px;
   margin: auto;
 }
 
+/* small hearts */
 .block div {
-  width: 25px;
-  height: 25px;
+  width: 22px;
+  height: 22px;
   position: absolute;
   background: url('https://cdn-icons-png.flaticon.com/512/833/833472.png');
   background-size: cover;
-  animation: pop 1s infinite alternate;
 }
 
-@keyframes pop {
-  from { transform: scale(1); }
-  to { transform: scale(1.2); }
+/* bottom text */
+h2 {
+  margin-top: 20px;
+  color: crimson;
+  text-shadow: 0 0 15px pink;
 }
